@@ -85,6 +85,14 @@
         .inner img {
             display: block;
             border-radius: 50%;
+            /* Filtro suave para mejorar visibilidad */
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+        }
+        
+        /* Estilo para el emoji de respaldo si falla la imagen */
+        .inner span {
+            font-size: 40px; 
+            display: block;
         }
 
         /* --- Distribución y Retrasos (Corregidos índices 0 a 1-12) --- */
@@ -130,76 +138,76 @@
     <button id="button">Apagar</button>
     
     <div class="snowflakes" aria-hidden="true" id="maindiv">
-        <!-- Elemento 1: Pawns (Pequeño) -->
+        <!-- Elemento 1: Pawn (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="45" height="45" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="45" height="45" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 2: Wocup (Mediano) -->
+        <!-- Elemento 2: Cup (Mediano) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="60" height="60" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="60" height="60" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
-        <!-- Elemento 3: Pawns (Grande) -->
+        <!-- Elemento 3: Pawn (Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="80" height="80" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="80" height="80" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 4: Wocup (Pequeño) -->
+        <!-- Elemento 4: Cup (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="40" height="40" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="40" height="40" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
-        <!-- Elemento 5: Pawns (Muy Grande) -->
+        <!-- Elemento 5: Pawn (Muy Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="100" height="100" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="100" height="100" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 6: Wocup (Mediano) -->
+        <!-- Elemento 6: Cup (Mediano) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="55" height="55" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="55" height="55" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
-        <!-- Elemento 7: Pawns (Mediano-Grande) -->
+        <!-- Elemento 7: Pawn (Mediano-Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="70" height="70" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="70" height="70" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 8: Wocup (Grande) -->
+        <!-- Elemento 8: Cup (Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="90" height="90" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="90" height="90" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
-        <!-- Elemento 9: Pawns (Pequeño) -->
+        <!-- Elemento 9: Pawn (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="50" height="50" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="50" height="50" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 10: Wocup (Mediano-Grande) -->
+        <!-- Elemento 10: Cup (Mediano-Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="75" height="75" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="75" height="75" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
-        <!-- Elemento 11: Pawns (Muy Grande) -->
+        <!-- Elemento 11: Pawn (Muy Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="110" height="110" src="https://gs.xat.com/a_(pawns)_80" alt="img" onerror="this.style.display='none'">
+                <img width="110" height="110" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
-        <!-- Elemento 12: Wocup (Muy Pequeño) -->
+        <!-- Elemento 12: Cup (Muy Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="35" height="35" src="https://gs.xat.com/a_(wocup)_40" alt="img" onerror="this.style.display='none'">
+                <img width="35" height="35" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
     </div>
