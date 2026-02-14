@@ -18,6 +18,11 @@
             height: 100vh;
             overflow: hidden;
             font-family: sans-serif;
+            /* Evita que el usuario seleccione texto o imágenes */
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
         }
 
         button {
@@ -85,8 +90,13 @@
         .inner img {
             display: block;
             border-radius: 50%;
-            /* Filtro suave para mejorar visibilidad */
+            /* Filtro suave para mejorar visibilidad (se aplica por defecto) */
             filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+        }
+
+        /* REGLA NUEVA: Eliminar sombra específicamente para las imágenes wocup */
+        .inner img[src*="a-wocup-40.webp"] {
+            filter: none;
         }
         
         /* Estilo para el emoji de respaldo si falla la imagen */
@@ -141,73 +151,73 @@
         <!-- Elemento 1: Pawn (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="45" height="45" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="45" height="45" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 2: Cup (Mediano) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="60" height="60" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="60" height="60" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
         <!-- Elemento 3: Pawn (Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="80" height="80" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="80" height="80" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 4: Cup (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="40" height="40" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="40" height="40" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
         <!-- Elemento 5: Pawn (Muy Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="100" height="100" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="100" height="100" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 6: Cup (Mediano) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="55" height="55" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="55" height="55" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
         <!-- Elemento 7: Pawn (Mediano-Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="70" height="70" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="70" height="70" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 8: Cup (Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="90" height="90" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="90" height="90" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
         <!-- Elemento 9: Pawn (Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="50" height="50" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="50" height="50" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 10: Cup (Mediano-Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="75" height="75" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="75" height="75" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
         <!-- Elemento 11: Pawn (Muy Grande) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="110" height="110" src="https://xatimg.com/image/MP2WKYEXd5ng.gif" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
+                <img width="110" height="110" src="https://i.ibb.co/d4tHJt2X/Get-Strip833.webp" alt="pawn" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>♟️</span>'">
             </div>
         </div>
         <!-- Elemento 12: Cup (Muy Pequeño) -->
         <div class="snowflake">
             <div class="inner">
-                <img width="35" height="35" src="https://xatimg.com/image/Pcoia0dYu1BT.gif" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
+                <img width="35" height="35" src="https://i.ibb.co/0VXRd6sq/a-wocup-40.webp" alt="cup" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>🏆</span>'">
             </div>
         </div>
     </div>
@@ -216,6 +226,7 @@
         const toggleButton = document.getElementById("button");
         const mainDiv = document.getElementById("maindiv");
 
+        // Lógica del botón Apagar/Encender
         toggleButton.addEventListener("click", () => {
             if (mainDiv.style.display === "none") {
                 mainDiv.style.display = "block";
@@ -223,6 +234,40 @@
             } else {
                 mainDiv.style.display = "none";
                 toggleButton.textContent = "Encender";
+            }
+        });
+
+        // BLOQUEO DE CLICK DERECHO (Context Menu)
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // BLOQUEO DE TECLA F12 y OTROS ATAJOS DE DESARROLLADOR
+        document.addEventListener('keydown', function(event) {
+            // F12
+            if (event.key === 'F12' || event.keyCode === 123) {
+                event.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+I (Inspector)
+            if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) {
+                event.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+J (Consola)
+            if (event.ctrlKey && event.shiftKey && (event.key === 'J' || event.key === 'j')) {
+                event.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+C (Inspector de elementos)
+            if (event.ctrlKey && event.shiftKey && (event.key === 'C' || event.key === 'c')) {
+                event.preventDefault();
+                return false;
+            }
+            // Ctrl+U (Ver código fuente)
+            if (event.ctrlKey && (event.key === 'U' || event.key === 'u')) {
+                event.preventDefault();
+                return false;
             }
         });
     </script>
